@@ -70,7 +70,7 @@ ul {
   font-size: 24px;
   transition: color var(--transition-default);
 }
-.products-cards-wrapper article h3:hover{
+.products-cards-wrapper article h3:hover {
   color: #d97767;
 }
 .products-cards-wrapper article h3::before {
@@ -99,4 +99,78 @@ ul {
   color: #bdbdbd;
   font-size: 14px;
   margin-top: 18px;
+}
+.features {
+  padding-block: 110px 121px;
+}
+.features h2 {
+  color: #2d2424;
+  font-size: 64px;
+}
+.features > p {
+  max-width: 920px;
+  margin: 35px auto 90px;
+  color: #bdbdbd;
+  font-size: 24px;
+  line-height: 33px;
+}
+.features-cards-wrapper {
+  gap: 41px 30px;
+}
+.feature-card {
+  flex-basis: 540px;
+  transition: scale var(--transition-default);
+  gap: 30px;
+}
+.feature-card:hover {
+  scale: 1.04;
+}
+.feature-card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.feature-card-image img {
+  width: 100%;
+  height: 100%;
+  transition: scale var(--transition-default), rotate var(--transition-default);
+}
+.feature-card:hover img {
+  scale: 1.07;
+  rotate: -2deg;
+}
+.feature-card-content {
+  flex-basis: 310px;
+}
+.feature-card-content h3 {
+  color: #000000;
+  font-size: 24px;
+}
+.feature-card-content p {
+  color: #bdbdbd;
+  line-height: 160%;
+  margin-block: 12px;
+}
+.feature-card-content a {
+  display: inline-block;
+  color: #b85c38;
+  position: relative;
+  transition: color var(--transition-default);
+}
+.feature-card-content a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0%;
+  height: 2px;
+  background-color: #d97767;
+  transition: all var(--transition-default);
+}
+.feature-card-content a:hover::after {
+  width: 100%;
+}
+.feature-card-content a:hover {
+  color: #d97767;
 }
