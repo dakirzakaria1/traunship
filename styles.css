@@ -1,0 +1,102 @@
+:root {
+  --container-width: 1110px;
+  --transition-default: 0.4s ease;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100dvw;
+  min-height: 100dvh;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+}
+.nunito-font {
+  font-family: "Nunito", sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.products {
+  padding-block: 120px 153px;
+}
+.products h2 {
+  color: #2d2424;
+  font-size: 64px;
+}
+.products > p {
+  max-width: 920px;
+  margin: 24px auto 132px;
+  color: #bdbdbd;
+  font-size: 24px;
+  line-height: 33px;
+}
+.products-cards-wrapper {
+  gap: 80px 30px;
+}
+.products-cards-wrapper article {
+  flex-basis: 350px;
+  transition: scale var(--transition-default), filter var(--transition-default);
+}
+.products-cards-wrapper article:hover {
+  scale: 1.04;
+  filter: drop-shadow(0 0 12px #0000001f);
+}
+.products-cards-wrapper article h3 {
+  color: #b85c38;
+  font-size: 24px;
+  transition: color var(--transition-default);
+}
+.products-cards-wrapper article h3:hover{
+  color: #d97767;
+}
+.products-cards-wrapper article h3::before {
+  display: block;
+  margin-bottom: 26px;
+}
+.products-cards-wrapper article:nth-child(1) h3::before {
+  content: url(./images/product-1.png);
+}
+.products-cards-wrapper article:nth-child(2) h3::before {
+  content: url(./images/product-2.png);
+}
+.products-cards-wrapper article:nth-child(3) h3::before {
+  content: url(./images/product-3.png);
+}
+.products-cards-wrapper article:nth-child(4) h3::before {
+  content: url(./images/product-4.png);
+}
+.products-cards-wrapper article:nth-child(5) h3::before {
+  content: url(./images/product-5.png);
+}
+.products-cards-wrapper article:nth-child(6) h3::before {
+  content: url(./images/product-6.png);
+}
+.products-cards-wrapper article p {
+  color: #bdbdbd;
+  font-size: 14px;
+  margin-top: 18px;
+}
