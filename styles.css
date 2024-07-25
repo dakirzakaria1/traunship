@@ -38,6 +38,9 @@ ul {
 .justify-center {
   justify-content: center;
 }
+.justify-between{
+  justify-content: space-between;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -72,7 +75,6 @@ ul {
   top: 77px;
   left: 50%;
   transform: translateX(-50%);
-  justify-content: space-between;
   color: #ffffff;
   z-index: 1;
 }
@@ -477,4 +479,102 @@ ul {
 .testimonial-card h4 {
   font-size: 16px;
   font-weight: 400;
+}
+.footer {
+  background-color: #2d2424;
+}
+.footer-container {
+  padding-block: 110px 45px;
+}
+.footer-logo {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.address-column ul {
+  flex-direction: column;
+  gap: 18px;
+  max-width: 260px;
+}
+.address-column ul a {
+  color: #ffffff;
+  transition: color 0.7s;
+}
+.address-column ul a:hover {
+  color: #b85c38;
+}
+.footer-column-links h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 31px;
+}
+.footer-column-links ul {
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-column-links ul a {
+  color: #ffffff;
+  font-weight: 700;
+  transition: color var(--transition-default);
+}
+.footer-column-links ul a:hover {
+  color: #b85c38;
+}
+.footer-form-container h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 34px;
+}
+.footer-container form {
+  border-radius: 8px;
+  width: 445px;
+  background-color: #ffffff2e;
+  padding: 25px 42px;
+}
+.footer-form p {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.inputs-wrapper {
+  gap: 18px;
+}
+.inputs-wrapper .email-input {
+  flex-basis: 287px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 15px 19px;
+}
+.inputs-wrapper .email-input::placeholder {
+  color: #e0e0e0;
+}
+.inputs-wrapper .submit-input {
+  padding: 18px 32px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.footer-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+  background-color: #ffffff;
+  margin-block: 80px 41px;
+}
+.footer-sub p {
+  color: #ffffff;
+  font-size: 12px;
+}
+.social-links {
+  gap: 16px;
+}
+.social-links a {
+  color: #ffffff;
+  font-size: 13px;
+  transition: color var(--transition-default);
+}
+.social-links a:hover {
+  color: #b85c38;
 }

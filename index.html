@@ -17,11 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./styles.css" />
     <title>Traunship - Best Place to Buy Rockets</title>
   </head>
   <body>
-    <header class="header container flex items-center nunito-font">
+    <header class="header container flex items-center justify-between nunito-font">
       <a href="#maincontent" class="header-logo"> Traunship </a>
       <nav>
         <ul class="header-nav-list flex">
@@ -279,5 +280,65 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-top flex justify-between">
+          <div class="address-column">
+            <a href="#" class="footer-logo nunito-font">Traunship</a>
+            <ul class="flex nunito-font">
+              <li>
+                <a href="#">4517 Washington Ave. Manchester,
+                  Kentucky 39495</a>
+              </li>
+              <li>
+                <a href="#">(684) 555-0102</a>
+              </li>
+              <li>
+                <a href="#">(603) 555-0123</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column-links nunito-font">
+            <h3>Quick Links</h3>
+            <nav>
+                <ul class="flex">
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#products">Products</a></li>
+                  <li><a href="#testimonial">Testimonial</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="footer-form-container nunito-font">
+            <h3>Newsletter</h3>
+            <form action="#" class="footer-form">
+            <p>We send updates in every week</p>
+            <div class="inputs-wrapper flex">
+              <input class="email-input" type="email" placeholder="Email Address" required>
+            <input class="submit-input button caramel-button" type="submit" value="Go">
+            </div>
+          </form>
+          </div>
+        </div>
+        <span class="footer-line"></span>
+        <div class="footer-sub flex items-center justify-between">
+          <p class="nunito-font">© 2021 Traunship. All right reserved.</p>
+          <ul class="social-links flex">
+            <li>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
