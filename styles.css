@@ -223,6 +223,46 @@ ul {
   font-size: 14px;
   margin-top: 18px;
 }
+.ceo {
+  height: 600px;
+  background-color: #e0c097;
+  gap: 90px;
+}
+.ceo img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 460px 460px 0;
+}
+.ceo article {
+  flex-basis: 445px;
+  color: #5c3d2e;
+}
+.ceo article h2 {
+  font-size: 48px;
+  line-height: 65px;
+}
+.ceo article p {
+  font-size: 24px;
+  line-height: 33px;
+  margin: 18px 0 24px;
+}
+.ceo-profile {
+  gap: 24px;
+}
+.ceo-profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.ceo-profile h3 {
+  color: #2d2424;
+  font-size: 18px;
+  font-weight: 400;
+}
+.ceo-profile span {
+  display: block;
+}
 .features {
   padding-block: 110px 121px;
 }
