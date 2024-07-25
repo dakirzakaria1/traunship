@@ -14,6 +14,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
 }
 ul {
   list-style: none;
@@ -47,8 +48,7 @@ ul {
   font-size: 20px;
   font-weight: 700;
   border-radius: 40px;
-  transition: background var(--transition-default),
-    color var(--transition-default);
+  transition: all var(--transition-default);
 }
 .caramel-button {
   background-color: #b85c38;
@@ -56,11 +56,94 @@ ul {
 }
 .caramel-button:hover {
   background-color: transparent;
-  color: #b85c38;
+  color: #ffffff;
 }
 .transparent-button {
   background-color: transparent;
   border: 2px solid #ffffff;
+}
+.transparent-button:hover {
+  color: #b85c38;
+  background-color: #ffffff;
+}
+.header {
+  width: 100%;
+  position: absolute;
+  top: 77px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  color: #ffffff;
+  z-index: 1;
+}
+.header-logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+.header-nav-list {
+  gap: 50px;
+}
+.header-nav-list a {
+  transition: color var(--transition-default);
+  font-size: 18px;
+  position: relative;
+}
+.header .button {
+  font-size: 18px;
+  padding: 12px 32px;
+  font-weight: 400;
+}
+.header-nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #b85c38;
+  transition: width var(--transition-default);
+}
+.header-nav-list a:hover {
+  color: #b85c38;
+}
+.header-nav-list a:hover::after {
+  width: 100%;
+}
+.hero {
+  min-height: 920px;
+  background: url(./images/hero-background.png) center/cover fixed no-repeat;
+  clip-path: ellipse(71% 59% at 50% 40%);
+}
+.hero-content {
+  color: #ffffff;
+}
+.play-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #b85c38;
+  margin: 0 auto;
+  border: 2px solid #b85c38;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.play-button img {
+  width: 16px;
+  height: 20px;
+}
+.hero-content h1 {
+  font-size: 72px;
+  margin-top: 40px;
+}
+.hero-content p {
+  font-size: 24px;
+  margin-block: 28px 40px;
+}
+.hero-buttons-list {
+  gap: 24px;
+}
+.play-button:hover {
+  background-color: transparent;
 }
 .products {
   padding-block: 120px 153px;
@@ -238,8 +321,8 @@ ul {
   line-height: 33px;
   margin-block: 24px 42px;
 }
-.blog-content a {
-  display: inline-block;
+.blog-content a:hover {
+  color: #b85c38;
 }
 .blogs-cards-wrapper {
   gap: 30px;
