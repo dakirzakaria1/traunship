@@ -11,7 +11,7 @@ Traunship is the premier destination for buying high-quality rockets. Explore ou
 
 ## Demo
 
-You can view a live demo of the project [here](https://traunship.vercel.app/).
+You can view a live demo of the project <a href="https://traunship.vercel.app/" target="_blank">here</a>.
 
 ## Technologies Used
 
